@@ -4,11 +4,12 @@ import Git from "../../img/git.png";
 import Insta from "../../img/green insta.png";
 import Link from "../../img/link.png";
 import FloatingDiv from "../FloatingDiv/FloatingDiv";
-import green from "../../img/News.png";
+import green from "../../img/Vector2.png";
 import vector from "../../img/Vector1.png";
 import thumbup from "../../img/thumbup.png";
 import Crown from "../../img/crown.png";
-import prince from "../../img/prince.png";
+import prince from "../../img/omg.png";
+import glasses from "../../img/glassesimoji.png";
 const Intro = () => {
   return (
     <div className="intro">
@@ -35,12 +36,28 @@ const Intro = () => {
         <img src={vector} alt="" />
         <img src={green} alt="" />
         <img src={prince} alt="" />
-      </div>
-      <div>
-        <FloatingDiv image={Crown} txt1="Web" txt2="Devloper" />
-      </div>
-      <div style={{ top: 18, left: "0rem" }}>
-        <FloatingDiv image={thumbup} txt1="Best Design" txt2="Award" />
+        <img src={glasses} alt="" />
+        <div style={{ top: "-4%", left: "68%" }}>
+          <FloatingDiv image={Crown} txt1="Web" txt2="Devloper" />
+        </div>
+        <div style={{ top: "18rem", left: "0rem" }}>
+          <FloatingDiv image={thumbup} txt1="Best Design" txt2="Award" />
+        </div>
+        {/* {blur div} */}
+        <div
+          className="blur"
+          style={{ backgroundColor: "rgb(238 210 255)" }}
+        ></div>
+        <div
+          className="blur"
+          style={{
+            background: "#C1F5FF",
+            top: "17rem",
+            width: "21rem",
+            height: "11rem",
+            left: "-9rem",
+          }}
+        ></div>
       </div>
     </div>
   );
