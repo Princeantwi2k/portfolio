@@ -1,16 +1,23 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Service.css";
 import Card from "../Card/Card";
 import heart from "../../img/heartemoji.png";
 import glasses from "../../img/glasses.png";
 import humble from "../../img/humble.png";
 import resume from "./resume.pdf";
+import { themeContext } from "../../Context/Context";
+import { motion } from "framer-motion";
+
 const Services = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
+  const transition = { duration: 1, type: "spring" };
   return (
-    <div className="service">
+    <div className="service" id="Services">
       {/* {left side} */}
       <div className="awesome">
-        <span>My Awesome</span>
+        <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
         <span>service</span>
         <span>
           i make sure design application
@@ -28,33 +35,33 @@ const Services = () => {
 
       {/* right side */}
       <div className="cards">
-        <div style={{ left: "14rem" }}>
+        <div style={{ left: "22rem" }}>
           <Card
             emoji={heart}
             heading={"Design"}
-            detail={"Figma, Photoshop, Adobe"}
+            detail={"Figma, Photoshop, Adobe Illustrator, Adobe xd"}
           />
         </div>
 
         {/* second card */}
 
-        <div style={{ top: "12rem", left: "-4rem" }}>
+        <div style={{ left: "-1rem", top: "12rem" }}>
           <Card
             emoji={glasses}
             heading={"Developer"}
-            detail={"Html, Css, JavaScript, React, Bootstrap"}
+            detail={"Html, Css, JavaScript, React, Bootstrap,Nodejs, "}
           />
         </div>
 
         {/* third card */}
 
-        <div style={{ top: "19rem", left: "12rem" }}>
+        <motion.div style={{ left: "19rem", top: "19rem" }}>
           <Card
             emoji={humble}
             heading={"UI/UX"}
             detail={"i can build you the best ui you have ever seen "}
           />
-        </div>
+        </motion.div>
         <div
           className="blur s-blur2"
           style={{ background: "var(--purple)" }}
