@@ -1,13 +1,12 @@
-import React, { useRef, useState, useContext } from "react";
+import React, { useContext, useRef, useState } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
 import { themeContext } from "../../Context/Context";
-
 const Contact = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   const form = useRef();
-  const [Done, setDone] = useState(false);
+  const [done, setDone] = useState(false);
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -22,8 +21,8 @@ const Contact = () => {
         (result) => {
           console.log(result.text);
           setDone(true);
+          form.reset();
         },
-
         (error) => {
           console.log(error.text);
         }
@@ -31,7 +30,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-form" id="Contact">
+    <div className="contact-form" id="contact">
       {/* left side copy and paste from work section */}
       <div className="w-left">
         <div className="awesome">
@@ -46,7 +45,7 @@ const Contact = () => {
       </div>
       {/* right side form */}
       <div className="c-right">
-        <form ref={form} onsubmit={sendEmail}>
+        <form ref={form} onSubmit={sendEmail}>
           <input
             type="text"
             name="user_name"
@@ -61,7 +60,7 @@ const Contact = () => {
           />
           <textarea name="message" className="user" placeholder="Message" />
           <input type="submit" value="Send" className="button" />
-          <span>{Done && "thank you for contacting me!"}</span>
+          <span>{done && "Thanks for Contacting me"}</span>
           <div
             className="blur c-blur1"
             style={{ background: "var(--purple)" }}
