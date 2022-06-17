@@ -2,10 +2,15 @@
     height: 10vh;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 2rem;
+    top: 0;
 }
 
 .n-left{
+ 
     flex: 1;
+    align-items: center;
+    justify-content: left;
     display: flex;
     gap: 2rem;
 }
@@ -19,6 +24,7 @@
     display: flex;
     flex: 1;
     align-items: center;
+    justify-content: flex-end;
     font-weight: 400;
 }
 .n-list{
@@ -38,3 +44,11 @@
 .n-button{
     flex: 2;
 }
+@media screen and (max-width: 480px) {
+    .n-list {
+      display: none;
+    }
+    .n-button{
+        display: none;
+    }
+  }
