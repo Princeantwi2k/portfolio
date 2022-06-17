@@ -80,7 +80,7 @@ height: 2rem;
     left: -3rem;
   }
 .i-right > :nth-child(3){
-    transform: scale(0.9);
+    transform: scale(0.8);
     left: 12%;
     bottom: 1%;
    
