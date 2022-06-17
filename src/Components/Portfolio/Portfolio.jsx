@@ -5,6 +5,9 @@ import pic2 from "../../img/app9.png";
 import pic3 from "../../img/app1.png";
 import pic4 from "../../img/app2.png";
 import pic5 from "../../img/app4.png";
+import pic10 from "../../img/app10.png";
+import pic7 from "../../img/app3.png";
+import pic6 from "../../img/app5.png";
 import "./Portfolio.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -28,28 +31,44 @@ const Portfolio = () => {
         className="portfolio-slider"
       >
         <SwiperSlide>
-          {" "}
-          <img src={pic} alt="" />
+          <a href="https://blog-five-iota.vercel.app/">
+            <img src={pic} alt="" />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          {" "}
+          <a href="https://cryptocurrency-princeantwi2k.vercel.app/"></a>
           <img src={pic1} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          {" "}
-          <img src={pic2} alt="" />
+          <a href="https://cocacla-princeantwi2k.vercel.app/">
+            {" "}
+            <img src={pic2} alt="" />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          {" "}
+          <a href="https://laughing-newton-2012ab.netlify.app"></a>
           <img src={pic3} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          {" "}
-          <img src={pic4} alt="" />
+          <a href="https://confident-austin-7589d3.netlify.app/">
+            <img src={pic4} alt="" />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          {" "}
+          <a href="https://adom-clinic-princeantwi2k.vercel.app/"></a>
           <img src={pic5} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <a href="https://truck-h8y89yz1k-princeantwi2k.vercel.app/"></a>
+          <img src={pic10} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <a href="https://articles-green.vercel.app/"></a>
+          <img src={pic6} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <a href="https://road-issues.vercel.app/"></a>
+          <img src={pic7} alt="" />
         </SwiperSlide>
       </Swiper>
     </div>
