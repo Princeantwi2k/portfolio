@@ -12,7 +12,6 @@ const Services = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
-  const transition = { duration: 1, type: "spring" };
   return (
     <div className="service" id="Services">
       {/* {left side} */}
