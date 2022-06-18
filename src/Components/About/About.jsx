@@ -12,14 +12,12 @@ const About = () => {
         <span>Information</span>
         <span>
           I'm Prince Kojo Antwi, I am 24 years old gentleman.
-          <br />I am a Front end web develper but currently <br />
-          do not any professional experience at the moment,
+          <br />I am a Front end web develper but currently do not any <br />
+          professional experience at the moment, I have built some
           <br />
-          I have built some website as my project you can
-          <br />
-          check them out in my portfolio. With software development,
-          <br />
-          there is always something new to discover.
+          website as my project you can check them out in my portfolio.
+          <br /> With software development, there is always something new to
+          discover.
           <br /> Designing a program that is truly helpful to the user is my
           ultimate <br />
           goal on every project, I'm hoping to get deals with <br />
