@@ -6,7 +6,6 @@ import glasses from "../../img/glasses.png";
 import humble from "../../img/humble.png";
 import resume from "./resume.pdf";
 import { themeContext } from "../../Context/Context";
-import { motion } from "framer-motion";
 
 const Services = () => {
   const theme = useContext(themeContext);
@@ -19,8 +18,11 @@ const Services = () => {
         <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
         <span>service</span>
         <span>
-          i make sure design application
+          I make sure i design application
           <br /> in other to meet business and personal objective.
+          <br />
+          Speed and Acurracy is what i believe in most
+          <br /> when it comes to delivering my project.
         </span>
         <a href={resume} download>
           <button className="button s-button"> Download Cv</button>
@@ -38,7 +40,9 @@ const Services = () => {
           <Card
             emoji={heart}
             heading={"Design"}
-            detail={"Figma, Photoshop, Adobe Illustrator, Adobe xd"}
+            detail={
+              "   Your project will be done with speed and quality design for your project is assured always 24/7"
+            }
           />
         </div>
 
@@ -48,19 +52,23 @@ const Services = () => {
           <Card
             emoji={glasses}
             heading={"Developer"}
-            detail={"Html, Css, JavaScript, React, Bootstrap,Nodejs, "}
+            detail={
+              " I build HTML/CSS, Wordpress, Responsive Website,React Javascript  websites with the skills i have acquired so far."
+            }
           />
         </div>
 
         {/* third card */}
 
-        <motion.div style={{ left: "19rem", top: "19rem" }}>
+        <div style={{ left: "19rem", top: "19rem" }}>
           <Card
             emoji={humble}
-            heading={"UI/UX"}
-            detail={"i can build you the best ui you have ever seen "}
+            heading={" Effective Communication"}
+            detail={
+              "  Communication between the client and me will be effective and easy,am alway available to my client 24/7"
+            }
           />
-        </motion.div>
+        </div>
         <div
           className="blur s-blur2"
           style={{ background: "var(--purple)" }}

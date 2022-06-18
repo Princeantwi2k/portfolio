@@ -10,6 +10,7 @@ import Footer from './Components/Footer/Footer';
 
 import {themeContext} from './Context/Context'
 import {useContext} from 'react'
+import About from './Components/About/About';
 
 function App() {
 const theme= useContext(themeContext);
@@ -21,6 +22,7 @@ const darkMode = theme.state.darkMode
     }}>
     <Navbar />
     <Intro />
+    <About />
     <Services />
     <Experience />
     <Work />

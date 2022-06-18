@@ -22,13 +22,13 @@ const Work = () => {
           </span>
           <span>Brand & Client</span>
           <span>
-            Lorem ispum is simpley dummy text of printing of
+            As a young front end developer i biggest dream
             <br />
-            ispum is simpley dummy text of printingLorem text
+            is to be build applications that well help give users satisfaction.
             <br />
-            y dummy text of printingLorem
+            nothing well make me happy if one day, my application is one
             <br />
-            ispum is simpley dummy text of printing
+            of the big names like , Facebook, Upwork,Amazon,Shopify and Fiverr.
           </span>
 
           <button className="button s-button"> Hire me</button>
