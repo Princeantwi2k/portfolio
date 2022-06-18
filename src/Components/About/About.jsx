@@ -11,13 +11,14 @@ const About = () => {
         <span style={{ color: darkMode ? "white" : "" }}>My Personal</span>
         <span>Information</span>
         <span>
-          I'm Prince Kojo Antwi. I'm a FrontEnd web developer.
-          <br /> I am 23 years old. I dont have any professional experience at
-          the moment,
+          I'm Prince Kojo Antwi,
+          <br /> I am 24 years old gentleman. I am a Front end web develper but
+          currently <br />
+          do not any professional experience at the moment,
           <br />
-          but i have built some nice website as my personal project you can
+          I have built some website as my project you can
           <br />
-          check them out in my recent project below. With software development,
+          check them out in my portfolio. With software development,
           <br />
           there is always something new to discover.
           <br /> Designing a program that is truly helpful to the user is my
