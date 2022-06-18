@@ -11,9 +11,8 @@ const About = () => {
         <span style={{ color: darkMode ? "white" : "" }}>My Personal</span>
         <span>Information</span>
         <span>
-          I'm Prince Kojo Antwi,
-          <br /> I am 24 years old gentleman. I am a Front end web develper but
-          currently <br />
+          I'm Prince Kojo Antwi, I am 24 years old gentleman.
+          <br />I am a Front end web develper but currently <br />
           do not any professional experience at the moment,
           <br />
           I have built some website as my project you can
