@@ -1,0 +1,36 @@
+.about{
+    display: flex;
+    height: 10rem;
+    margin-bottom: 8rem;
+    margin-top: 9rem;
+    margin-bottom: 13rem;
+    /* scroll view */
+    padding-top: 3rem;
+    gap: 3rem;
+   
+}
+
+.a-img{
+    width: 500px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+@media screen and (max-width:480px){
+    .about{
+        height: 30rem;
+        flex-direction: column;
+        margin-bottom: 8rem;
+        margin-top: 5rem;
+        margin-bottom: 13rem;
+        /* scroll view */
+    }
+    .a-img{
+        width: 400px;
+        height: 400px;
+        margin: 20px;
+        border-radius: 30px;
+        
+    }
+}
