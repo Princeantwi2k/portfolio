@@ -8,6 +8,7 @@ import pic5 from "../../img/app4.png";
 import pic10 from "../../img/app10.png";
 import pic7 from "../../img/app3.png";
 import pic6 from "../../img/app5.png";
+import pic11 from "../../img/app11.png";
 import "./Portfolio.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -30,6 +31,11 @@ const Portfolio = () => {
         grabCursor={true}
         className="portfolio-slider"
       >
+        <SwiperSlide>
+          <a href="https://deprelief.vercel.app/">
+            <img src={pic11} alt="" />
+          </a>
+        </SwiperSlide>
         <SwiperSlide>
           <a href="https://blog-five-iota.vercel.app/">
             <img src={pic} alt="" />
